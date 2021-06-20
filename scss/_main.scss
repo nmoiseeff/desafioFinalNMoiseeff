@@ -12,7 +12,8 @@
         &__texto#{$numero} {
         display: flex;
         flex-direction: column;
-        margin: 0% 15% 0% 15%; 
+        margin: 0% 10% 0% 10%;
+        padding: 2%; 
         }
         &__img#{$numero} {
             max-height: 100%;
@@ -29,12 +30,14 @@
 }
 
 .seccion3{
+    padding: 1.5rem;
+    align-items: start;
     @include grid (3,2);
 }
 
 .seccionIndex {
     &__textoIndex {
-    margin: 25% 10% 15% 10%; 
+    margin: 15% 10% 1% 10%; 
     order: 2;
     }
     &__ImgIndex {
@@ -55,8 +58,9 @@
     max-height: 100%;
     max-width: 100%;
     padding: 0% 5%;
-    margin: 5% 0% 0% 0%;
+    margin: 5% 5% 5% 0%;
     order: 0;
+    
     &--1{
         order: none;
     }
@@ -83,5 +87,6 @@
         order: none;
     } 
 }  
+
 
 
