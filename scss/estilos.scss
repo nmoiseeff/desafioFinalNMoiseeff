@@ -1,0 +1,39 @@
+@import "fonts";
+@import "variables";
+@import "globales";
+@import "header";
+@import "main";
+@import "footer";
+@import "animacion";
+
+@media (max-width: $tablet){
+    .contenedor{
+        max-width: $tablet;
+    }
+    .seccion1, .seccion2, .seccionIndex {
+        @include grid (1,2);
+    }
+    .seccionIndex__ImgIndex {
+        grid-row: 2;   
+    }
+    .seccionIndex__textoIndex {
+        margin-top: 30%;  
+    }
+    .seccion3 {
+        @include grid (1,6)   
+    }
+    h2{
+        font-size: 1.1em;  
+    }
+    .logoRedes{
+        height: 50%;
+        border-radius: .5rem; 
+    }
+    .txtVid {
+        order: 2;
+    }
+    .boton {
+        margin: 1em 25% 1em 25%;
+    }
+      
+}

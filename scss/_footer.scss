@@ -1,0 +1,33 @@
+@import"variables";
+@import"mixins";
+ 
+.footer {
+    max-height: 100%;
+    min-width: 100%;
+    background-color: $orange;
+    background-size: 100%;
+    margin-top: 3%;
+    padding-top: 3%;
+    z-index: 1030;
+    position: absolute;
+left: 0;
+    &--tit{
+        margin: 0% 0% 2% 0%;
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:center ;
+        list-style: none;
+        li{
+            margin-bottom: 2%;
+        }
+    }
+ }
+
+ .logoRedes{
+    height: 70%;
+    background-color: white;
+    border-radius: .45rem; 
+ }

@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+
+html {
+    font-size: 1em;    
+}
+.contenedor{
+    background-image: radial-gradient(closest-side at 50% 70%, $grisLt, $gris);
+    width: 90%;
+    margin: auto;
+    &__centrador {
+    max-width: $desktop;
+    };
+}
+h1, h2, h3 {  
+    font-family: $principal;
+    text-transform: uppercase; 
+    margin-bottom: 2%; 
+    letter-spacing: .05em;  
+}
+h1 {
+    color:$orange;
+    font-size: 2em;
+    font-weight: $bold;   
+}
+h2{
+    color: $blanco;
+    font-weight: $gruesa;
+    font-size: 1.3em;    
+}
+h3{
+    color: $blanco;
+    font-weight: $gruesa;
+    font-size: 1.3em; 
+}
+img{
+    max-width: 100%;
+    
+}
+.p {
+    font-family: $principal;
+    text-align: justify;
+    font-weight: $normal;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 1em;
+   &--PS1{
+       color:rgb(173, 173, 173);
+       }
+   &--PS2{
+       color:black;
+       padding: 0% 5%;
+   }   
+}
+.boton {
+    border: none; 
+    width: 160px; 
+    height: 2.5em;
+    padding: 0 5%;
+    display: inline-block;
+    border-radius: 5px; 
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; 
+    transition: 0.3s ease all; 
+    text-decoration: none;
+    margin: 1em auto 1em 60%;
+    font-family: $principal;
+    font-size: 1em;
+    font-weight: $normal;
+    &:hover {
+        color: $gris;
+        background: $orangeLt; 
+        text-decoration: none;
+    }
+}
+
+$colores: (
+    color1:$gris,
+    color2:$orange,
+);
+
+@each $name-class, $color in $colores {
+
+    .btn--#{$name-class} {
+        background-color: $color;
+        padding: 1.8em;
+        color:$negro;
+        width: 160px;
+        margin: 1em auto 2em 55%;
+
+    } 
+}
+div table tr{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10%;
+}
+th {
+    border: 1px solid white;
+    font-family: $principal;
+    text-align: center;
+    font-weight: 200;
+    margin: 2%;
+    color:rgb(173, 173, 173);   
+}
+td {
+    border: 1px solid white;
+    font-family: $principal;
+    text-align: center;
+    font-weight: 200;
+    margin: 2%;
+    color:rgb(173, 173, 173);
+} 

@@ -1,0 +1,11 @@
+@keyframes shield {
+        0%   {background-image: url(../assets/M5web4G.png)}
+        25%  {background-image: url(../assets/M5web4GA.png );}
+        50%  {background-image: url(../assets/M5web4NA.png );;}
+        75%  {background-image: url(../assets/M5web4N.png );}
+        100% {background-image: url(../assets/M5web4G.png );}
+      }
+
+.seccion2__img2:hover {
+        transform: scale(1.3, 1.3);
+    }

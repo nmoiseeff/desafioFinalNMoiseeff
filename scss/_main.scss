@@ -1,0 +1,87 @@
+@import"variables";
+@import"mixins";
+
+
+@each $numero in 1, Index, 2, 3  {
+    .seccion#{$numero} {
+        align-items:center;
+        height:40%;
+        background-color: none; 
+        @include grid (2,0);
+        margin-top: 10%;
+        &__texto#{$numero} {
+        display: flex;
+        flex-direction: column;
+        margin: 0% 15% 0% 15%; 
+        }
+        &__img#{$numero} {
+            max-height: 100%;
+            width: auto;
+            }
+    }
+}
+.seccion2__img2 {
+    order: 2;
+}
+.seccion1__texto1 {
+    
+   margin-top: 20%
+}
+
+.seccion3{
+    @include grid (3,2);
+}
+
+.seccionIndex {
+    &__textoIndex {
+    margin: 25% 10% 15% 10%; 
+    order: 2;
+    }
+    &__ImgIndex {
+    background-image: url(../assets/M5web4G.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+    animation-name: shield;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    }
+}      
+
+.vid {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0% 5%;
+    margin: 5% 0% 0% 0%;
+    order: 0;
+    &--1{
+        order: none;
+    }
+    &--2{
+        order: none;
+    }
+    &--3{
+        order: none;
+    }
+    }
+.txtVid {
+    max-height: 100%;
+    width: auto;
+    padding: 5%;
+    margin: 5% 0% 0% 0%;
+    text-align: center;
+    &--1{
+        order: none;
+    } 
+    &--2{
+        order: none;
+    } 
+    &--3{
+        order: none;
+    } 
+}  
+
+
