@@ -12,23 +12,23 @@
 .navbar-light {
     .navbar-nav{
         .nav-link{
-            font-weight: 200;
+            font-weight: $fina;
             text-align: end;
-            color: white;
+            color: $blanco;
             font-family: $principal;
             font-size: 1.1em;
         }
         .nav-link.active, .show>.nav-link {
             display: flex;
-            font-weight: 400;
+            font-weight: $gruesa;
             justify-content: flex-end;
-            color: white;
+            color: $blanco;
             font-family: $principal;
             font-size: 1.1em;
         }    
     }
     .navbar-toggler {
-        color: white;
+        color: $gris;
         font-size: 1.1em;
     }
 }

@@ -35,7 +35,7 @@ h2 {
 h3 {
   color: white;
   font-weight: 600;
-  font-size: 1.3em; }
+  font-size: 1em; }
 
 img {
   max-width: 100%; }
@@ -55,8 +55,8 @@ img {
 
 .boton {
   border: none;
-  width: 160px;
-  height: 2.5em;
+  width: 150px;
+  height: 2em;
   padding: 0 5%;
   display: inline-block;
   border-radius: 5px;
@@ -131,14 +131,14 @@ td {
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
   display: flex;
-  font-weight: 400;
+  font-weight: 600;
   justify-content: flex-end;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em; }
 
 .navbar-light .navbar-toggler {
-  color: white;
+  color: #4f6d7a;
   font-size: 1.1em; }
 
 /*colores*/
@@ -266,6 +266,10 @@ td {
     order: none; }
   .txtVid--3 {
     order: none; }
+  .txtVid--dist {
+    margin: 5%;
+    padding: 2%;
+    text-align: center; }
 
 /*colores*/
 /*fuentes*/
