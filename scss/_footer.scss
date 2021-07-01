@@ -10,24 +10,25 @@
     padding-top: 3%;
     z-index: 1030;
     position: absolute;
-left: 0;
+    left: 0;
     &--tit{
         margin: 0% 0% 2% 0%;
         text-align: center;
+        padding: 0.5em 2em;
     }
     ul {
         display: flex;
         flex-direction: row;
-        justify-content:center ;
+        justify-content: center;
         list-style: none;
+        padding: 0.5em 2em;
         li{
-            margin-bottom: 2%;
+            margin: 1em 1em;
         }
     }
  }
 
- .logoRedes{
-    height: 70%;
-    background-color: white;
-    border-radius: .45rem; 
+.logoRedes {
+    color: $gris;
+    font-size: 2em;
  }

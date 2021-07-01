@@ -14,7 +14,8 @@
         @include grid (1,2);
     }
     .seccionIndex__ImgIndex {
-        grid-row: 1;   
+        grid-row: 1;
+        background-size: 60%;   
     }
     .seccionIndex__textoIndex {
         margin-top: 10%;  
@@ -25,10 +26,6 @@
     h2{
         font-size: 1.1em;  
     }
-    .logoRedes{
-        height: 50%;
-        border-radius: .5rem; 
-    }
     .txtVid {
         order: 2;
     }
@@ -37,3 +34,11 @@
     }
       
 }
+
+@media (max-width: $telefono){
+    .seccionIndex {
+        &__ImgIndex {
+        background-size: 100%;
+        }
+    }
+}      
