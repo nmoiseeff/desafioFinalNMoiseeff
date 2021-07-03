@@ -21,14 +21,15 @@
             }
     }
 }
+.seccion1__texto1 {  
+   margin-top: 20%
+}
 .seccion2__img2 {
     order: 2;
 }
-.seccion1__texto1 {
-    
-   margin-top: 20%
+.seccion3__texto3 {  
+    overflow: scroll;
 }
-
 .seccion4{
     padding: 1.5rem;
     align-items: start;
@@ -91,7 +92,10 @@
         padding: 2%;
         text-align: center;
     } 
-}  
+} 
+table {
+    border-collapse: separate;
+}
 .contacto {
     padding: 0.5em 2em;
 }

@@ -235,11 +235,14 @@ td {
     max-height: 100%;
     width: auto; }
 
+.seccion1__texto1 {
+  margin-top: 20%; }
+
 .seccion2__img2 {
   order: 2; }
 
-.seccion1__texto1 {
-  margin-top: 20%; }
+.seccion3__texto3 {
+  overflow: scroll; }
 
 .seccion4 {
   padding: 1.5rem;
@@ -294,6 +297,9 @@ td {
     padding: 2%;
     text-align: center; }
 
+table {
+  border-collapse: separate; }
+
 .contacto {
   padding: 0.5em 2em; }
 
@@ -345,7 +351,7 @@ td {
 @media (max-width: 768px) {
   .contenedor {
     max-width: 768px; }
-  .seccion1, .seccion2, .seccionIndex {
+  .seccion1, .seccion2, .seccionIndex, .seccion3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr); }
@@ -354,14 +360,18 @@ td {
     background-size: 60%; }
   .seccionIndex__textoIndex {
     margin-top: 10%; }
-  .seccion3 {
+  .seccion1__img1 {
+    grid-row: 1; }
+  .seccion2__img2 {
+    order: 0; }
+  .seccion4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   h2 {
     font-size: 1.1em; }
   .txtVid {
-    order: 2; }
+    order: 0; }
   .boton {
     margin: 1em 25% 1em 25%; } }
 

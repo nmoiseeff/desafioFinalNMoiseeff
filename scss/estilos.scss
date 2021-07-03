@@ -10,7 +10,7 @@
     .contenedor{
         max-width: $tablet;
     }
-    .seccion1, .seccion2, .seccionIndex {
+    .seccion1, .seccion2, .seccionIndex, .seccion3 {
         @include grid (1,2);
     }
     .seccionIndex__ImgIndex {
@@ -20,14 +20,20 @@
     .seccionIndex__textoIndex {
         margin-top: 10%;  
     }
-    .seccion3 {
+    .seccion1__img1 {
+        grid-row: 1;
+    }
+    .seccion2__img2 {
+        order: 0;
+    }
+    .seccion4 {
         @include grid (1,6)   
     }
     h2{
         font-size: 1.1em;  
     }
     .txtVid {
-        order: 2;
+        order: 0;
     }
     .boton {
         margin: 1em 25% 1em 25%;
