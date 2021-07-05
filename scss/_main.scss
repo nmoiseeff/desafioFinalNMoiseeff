@@ -2,7 +2,7 @@
 @import"mixins";
 
 
-@each $numero in 1, Index, 2, 3  {
+@each $numero in 1, Index, 2, 3, 4  {
     .seccion#{$numero} {
         align-items:center;
         height:40%;
@@ -21,15 +21,16 @@
             }
     }
 }
+.seccion1__texto1 {  
+   margin-top: 20%
+}
 .seccion2__img2 {
     order: 2;
 }
-.seccion1__texto1 {
-    
-   margin-top: 20%
+.seccion3__texto3 {  
+    overflow:auto ;
 }
-
-.seccion3{
+.seccion4{
     padding: 1.5rem;
     align-items: start;
     @include grid (3,2);
@@ -91,7 +92,12 @@
         padding: 2%;
         text-align: center;
     } 
-}  
-
+} 
+table {
+    border-collapse: separate;
+}
+.contacto {
+    padding: 0.5em 2em;
+}
 
 

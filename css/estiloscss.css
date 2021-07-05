@@ -111,6 +111,10 @@ td {
   margin: 2%;
   color: #adadad; }
 
+#wapp {
+  max-height: 50%;
+  width: auto; }
+
 .header {
   height: 10vh;
   width: 100%;
@@ -130,9 +134,7 @@ td {
   font-size: 1.1em; }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
-  display: flex;
   font-weight: 600;
-  justify-content: flex-end;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em; }
@@ -140,6 +142,10 @@ td {
 .navbar-light .navbar-toggler {
   color: #4f6d7a;
   font-size: 1.1em; }
+
+.navbar-light .navbar-collapse.show {
+  background-color: rgba(79, 109, 122, 0.7);
+  padding: 5% 10% 5% 0%; }
 
 /*colores*/
 /*fuentes*/
@@ -212,13 +218,33 @@ td {
     max-height: 100%;
     width: auto; }
 
-.seccion2__img2 {
-  order: 2; }
+.seccion4 {
+  align-items: center;
+  height: 40%;
+  background-color: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(0, 1fr);
+  margin-top: 10%; }
+  .seccion4__texto4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10% 0% 10%;
+    padding: 2%; }
+  .seccion4__img4 {
+    max-height: 100%;
+    width: auto; }
 
 .seccion1__texto1 {
   margin-top: 20%; }
 
-.seccion3 {
+.seccion2__img2 {
+  order: 2; }
+
+.seccion3__texto3 {
+  overflow: auto; }
+
+.seccion4 {
   padding: 1.5rem;
   align-items: start;
   display: grid;
@@ -271,6 +297,12 @@ td {
     padding: 2%;
     text-align: center; }
 
+table {
+  border-collapse: separate; }
+
+.contacto {
+  padding: 0.5em 2em; }
+
 /*colores*/
 /*fuentes*/
 /* Tamaño de Media Queries*/
@@ -286,19 +318,20 @@ td {
   left: 0; }
   .footer--tit {
     margin: 0% 0% 2% 0%;
-    text-align: center; }
+    text-align: center;
+    padding: 0.5em 2em; }
   .footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    list-style: none; }
+    list-style: none;
+    padding: 0.5em 2em; }
     .footer ul li {
-      margin-bottom: 2%; }
+      margin: 1em 1em; }
 
 .logoRedes {
-  height: 70%;
-  background-color: white;
-  border-radius: .45rem; }
+  color: #4f6d7a;
+  font-size: 2em; }
 
 @keyframes shield {
   0% {
@@ -312,30 +345,36 @@ td {
   100% {
     background-image: url(../assets/M5web4G.png); } }
 
-.seccion2__img2:hover {
+.seccion3__img3:hover {
   transform: scale(1.3, 1.3); }
 
 @media (max-width: 768px) {
   .contenedor {
     max-width: 768px; }
-  .seccion1, .seccion2, .seccionIndex {
+  .seccion1, .seccion2, .seccionIndex, .seccion3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .seccionIndex__ImgIndex {
-    grid-row: 1; }
+    grid-row: 1;
+    background-size: 60%; }
   .seccionIndex__textoIndex {
     margin-top: 10%; }
-  .seccion3 {
+  .seccion1__img1 {
+    grid-row: 1; }
+  .seccion2__img2 {
+    order: 0; }
+  .seccion4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   h2 {
     font-size: 1.1em; }
-  .logoRedes {
-    height: 50%;
-    border-radius: .5rem; }
   .txtVid {
-    order: 2; }
+    order: 0; }
   .boton {
     margin: 1em 25% 1em 25%; } }
+
+@media (max-width: 480px) {
+  .seccionIndex__ImgIndex {
+    background-size: 100%; } }
